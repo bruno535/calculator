@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('./fonts/DS-DIGIB.TTF');
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: black;
+    font-family: 'Digital';
+    text-align: center;
+}
+.calculadora{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height:45rem;
+    width: 55rem;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    padding: 15px;
+    background-color:rgb(43, 42, 42);
+}
+.botao{
+    width: 210px;
+    height: 105px;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31,31,31);
+    border: none;
+}
+.botao:hover{
+    background-color: black;
+}
+.display{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.dt{
+    font-size: 20px;
+}
+#resultado{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    height: 130px;
+    margin: 5px;
+    font-size: 100px;
+    padding: 5px;
+}
+@media(max-width:700px) {
+    .calculadora{
+        width: 80vw;
+    }
+    .botao{
+        width: 18vw;
+    }
+    .resultado{
+        font-size: 50px;
+    }
+}
